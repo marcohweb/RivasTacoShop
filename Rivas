@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rivas Taco Shop | Corvallis, Oregon</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Subtle Spur Background */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.04) 1px, transparent 1px),
+                      radial-gradient(circle at 80% 80%, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 120px 120px;
+    z-index: -1;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #bbbbbb;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0px 8px 30px rgba(0,0,0,0.9);
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 40px;
+    background: white;
+    color: black;
+    border: none;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+}
+
+.btn:hover {
+    background: #cccccc;
+    transform: translateY(-3px);
+}
+
+/* Menu Section */
+.section {
+    padding: 120px 60px;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.menu-item {
+    background: #111111;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item h4 {
+    margin-bottom: 15px;
+}
+
+.menu-item p {
+    color: #aaaaaa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #000;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>RIVAS</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Authentic Mexican Flavor</h2>
+    <p>Fresh • Bold • Made Daily in Corvallis</p>
+    <button class="btn">View Menu</button>
+</section>
+
+<section class="section">
+    <h3>Popular Items</h3>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h4>Street Tacos</h4>
+            <p>Carne Asada, Al Pastor, Pollo</p>
+        </div>
+        <div class="menu-item">
+            <h4>Burritos</h4>
+            <p>Loaded with rice, beans & fresh salsa</p>
+        </div>
+        <div class="menu-item">
+            <h4>Quesabirria</h4>
+            <p>Crispy, cheesy, rich dipping broth</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Rivas Taco Shop • Corvallis, Oregon  
+    <br>
+    © 2026 All Rights Reserved
+</footer>
+
+</body>
+</html>
